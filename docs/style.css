@@ -39,11 +39,27 @@ padding: 10px;
 
 .hero{
 min-height: 800px;
-  background: radial-gradient(ellipse at center, #0d4a35 0%, #000 65%);
+  background: radial-gradient(ellipse 100% 600px at center, #0d4a35 0%, #000 65%);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width: 600px){.hero
+  {
+    background: radial-gradient(ellipse 180% 500px at center, #0d4a35 0%, #000 70%)
+  }
+}
+
+@media (max-width: 480px) {
+  .nav ul {
+    gap: 16px;
+  }
+
+  .hero h1 {
+    font-size: 34px;
+  }
 }
 
 .hero h1{
