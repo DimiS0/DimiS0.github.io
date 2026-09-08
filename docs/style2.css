@@ -87,6 +87,12 @@ main p {
     max-width: 400px;
     justify-self: center;
   }
+
+    .project-card2{
+    width: 100%;
+    max-width: 400px;
+    justify-self: center;
+  }
   
 }
 
