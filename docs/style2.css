@@ -49,7 +49,7 @@ body {
 }
 
 main {
-    background-color: brown;
+    background-color: rgb(0, 0, 0);
   color: #ffffff;
   text-align: center;
   padding: 80px 0px;
@@ -68,16 +68,35 @@ main p {
     display: grid;
     grid-template-columns: 250px 250px;
     gap: 24px;
-
     justify-content: center;
     align-items: start;
+    margin-top: 30px;
+}
+
+@media (max-width: 524px){
+  .project-card-grid {
+
+ grid-template-columns: 1fr;
+ padding:  0 16px;
+
+
+
+  }
+  .project-card1{
+    width: 100%;
+    max-width: 400px;
+    justify-self: center;
+  }
+  
 }
 
 .project-card1{
      width: 250px;
     min-height: 350px;
   background-color: #050706;
- border: 1px solid #202429;
+ border: 1px solid #32ffb7;
+ display: flex;
+ flex-direction: column;
  border-radius: 14px;
  overflow: hidden;
 }
@@ -100,26 +119,95 @@ main p {
 }
 
 .project-description{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
     padding: 0 16px 20px;
 }
 
 .project-description h3{
     margin:4px 0 10px;
     font-size: 21px;
+    margin-bottom: 20px;
 
 }
 .project-description a{
+  display: block;
     color: #ffffff;
     text-decoration: none;
+    margin-top: auto;
 }
 
 .project-description a:hover{
     color: #32ffb7;
 }
 
-.project-content p {
+.project-description p {
     margin: 0;
     color: #b4b7b8;
     font-size: 14px;
     line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.project-card2{
+     width: 250px;
+    min-height: 350px;
+  background-color: #050706;
+ border: 1px solid #32ffb7;
+display: flex;
+flex-direction: column;
+ border-radius: 14px;
+ overflow: hidden;
+}
+
+.project-image2{
+    height: 160px;
+    width: 100%;
+    overflow: hidden;
+    background-color: #002b20;
+    border-radius: 0px;
+}
+
+.project-image2 img{
+    display: block;
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.project-description2{
+      display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 0 16px 20px;
+    
+}
+
+.project-description2 h3{
+    margin:4px 0 10px;
+    font-size: 21px;
+    margin-bottom: 20px;
+
+}
+.project-description2 a{
+  display: block;
+    color: #ffffff;
+    text-decoration: none;
+    margin-top: auto;
+}
+
+.project-description2 a:hover{
+    color: #32ffb7;
+}
+
+.project-description2 p {
+    margin: 0;
+    color: #b4b7b8;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 10px;
 }
