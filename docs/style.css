@@ -100,7 +100,7 @@ background: linear-gradient(90deg,rgba(50, 255, 183, 1) 20%, rgba(106, 255, 241,
 }
 
 .stats h2, .stats p{
-  font-size: 16px;
+  font-size: 20px;
   font-family: 'segoe ui', sans-serif;
   text-align: center;
   color: #ffffff;
@@ -148,13 +148,13 @@ background: linear-gradient(90deg,rgba(50, 255, 183, 1) 20%, rgba(106, 255, 241,
 
 .card1 h2 {
   margin: 0;
-  font-size: 16px;
+  font-size: 28px;
   color: #ffffff;
 }
 
 .card1  p {
   margin: 0 0 0 62px;
   text-align: left;
-  font-size: 14px;
+  font-size: 20px;
   line-height: 1.45;
 }
