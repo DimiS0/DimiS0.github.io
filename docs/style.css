@@ -5,6 +5,7 @@
 body{
   margin: 0;
   background-color: #000000;
+  font-family: 'segoe ui', sans-serif;
 }
 .nav {
  position: sticky;
