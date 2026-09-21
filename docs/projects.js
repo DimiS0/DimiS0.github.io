@@ -7,7 +7,8 @@ const projecten = [
     link: "https://github.com/DimiS0/Hotel-simulatie---groep-7-",
     kaartKlasse: "project-card1",
     imageKlasse: "project-image",
-    descKlasse: "project-description"
+    descKlasse: "project-description",
+    tag: "C"
 },
 {
      titel: "Recycling app",
@@ -17,15 +18,37 @@ const projecten = [
     link: "https://github.com/DimiS0/Coderen3",
     kaartKlasse: "project-card2",
     imageKlasse: "project-image2",
-    descKlasse: "project-description2"
+    descKlasse: "project-description2",
+    tag: "Java"
 }
 ]
 
+const filtersection = document.getElementById("sorteerbuttons");
+
+const filterbutton = document.createElement("button");
+filterbutton.classList.add("button");
+filterbutton.textContent = "Sorteer op Java"
+
 const grid = document.getElementById("project-card-grid");
+
+
+filterbutton.addEventListener("click", () => {
+    const gefilterd = sorteerProjectOpTag(projecten, "Java");
+    ProjectenLatenZien(gefilterd);
+}); 
+
+
+const sorteerProjectOpTag = (projecten, sorteeroptie) => {
+    return projecten.filter((project) => {
+        return project.tag === sorteeroptie;
+    });
+};
+
+
+    
 
 const ProjectenLatenZien = (lijst) => {
     grid.innerHTML = "";
-
 
     lijst.forEach(projecten => {
         const artiekel = document.createElement("Article");
@@ -42,6 +65,7 @@ const ProjectenLatenZien = (lijst) => {
                             `;   
        grid.appendChild(artiekel);                       
     });
+    filtersection.appendChild(filterbutton); 
 }
 
 ProjectenLatenZien(projecten);
