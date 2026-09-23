@@ -81,13 +81,13 @@ main p {
   display:  flex;
   justify-content: center;
   gap: 10px;
-  margin: 10px 0px;
+  margin: 100px 0px -5px;
 }
 
 .button{
   width: 100px;
   height: 50px;
-  background-color: rgb(41, 33, 33);
+  background-color: rgb(32, 28, 28);
   color: rgb(255, 255, 255);
   border: solid rgb(50, 255, 183) 1px;
   border-radius: 30px;

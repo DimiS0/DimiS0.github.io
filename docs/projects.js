@@ -27,16 +27,31 @@ const filtersection = document.getElementById("sorteerbuttons");
 
 const filterbutton = document.createElement("button");
 filterbutton.classList.add("button");
-filterbutton.textContent = "Sorteer op Java"
+filterbutton.textContent = "Filter op Java"
+
+const toonAlles = document.createElement("button");
+toonAlles.classList.add("button");
+toonAlles.textContent = "Toon alles"
+
+const filterbutton2 = document.createElement("button");
+filterbutton2.classList.add("button");
+filterbutton2.textContent = "Filter op C"
 
 const grid = document.getElementById("project-card-grid");
 
+toonAlles.addEventListener("click", () => {
+    ProjectenLatenZien(projecten);
+}); 
 
 filterbutton.addEventListener("click", () => {
     const gefilterd = sorteerProjectOpTag(projecten, "Java");
     ProjectenLatenZien(gefilterd);
 }); 
 
+filterbutton2.addEventListener ("click", () => {
+    const gefilterd = sorteerProjectOpTag(projecten, "C");
+    ProjectenLatenZien(gefilterd);
+})
 
 const sorteerProjectOpTag = (projecten, sorteeroptie) => {
     return projecten.filter((project) => {
@@ -65,7 +80,9 @@ const ProjectenLatenZien = (lijst) => {
                             `;   
        grid.appendChild(artiekel);                       
     });
+    filtersection.appendChild(toonAlles); 
     filtersection.appendChild(filterbutton); 
+    filtersection.appendChild(filterbutton2);
 }
 
 ProjectenLatenZien(projecten);
