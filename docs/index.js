@@ -16,7 +16,7 @@ console.log(userData, userStat);
 
 
 const apiMaken = ()  => {
-	games.innerHTML = "<h2>Chess stats</h2>";
+	games.innerHTML = "<h2>Outside of coding</h2> <p>My chess stats</p>";
 
 	const artiekel = document.createElement("article");
 	artiekel.classList.add("artiekel-kaart");

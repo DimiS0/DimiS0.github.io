@@ -62,7 +62,7 @@ body {
 
  #contactform input{
   width: 300px;
-  height: 25px;
+  height: 38px;
   margin: 3px 0 8px;
   padding: 4px 6px;
   background-color: #111111;
@@ -70,9 +70,13 @@ body {
   border: 1px solid #32ffb7;
 }
 
+#contactform span{
+  margin-bottom: 20px;
+}
+
 #contactform button{
-  width: 100px;
-  height: 30px;
+  width: 110px;
+  height: 40px;
   border: 1px solid #32ffb7;
   border-radius: 8px;
   background-color: #1c201f;
