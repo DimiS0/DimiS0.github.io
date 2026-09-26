@@ -61,6 +61,7 @@ main h1 {
 
 main p {
   margin: 0;
+  font-size: 20px;
 }
 
 .project-card-grid{
@@ -71,6 +72,28 @@ main p {
     justify-content: center;
     align-items: start;
     margin-top: 30px;
+}
+.project-card-grid:has(> :only-child){
+  grid-template-columns: 250px;
+  justify-content: center;
+}
+
+.sorteerbuttons{
+  display:  flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 100px 0px -5px;
+}
+
+.button{
+  width: 100px;
+  height: 50px;
+  background-color: rgb(32, 28, 28);
+  color: rgb(255, 255, 255);
+  border: solid rgb(50, 255, 183) 1px;
+  border-radius: 30px;
+
+  
 }
 
 @media (max-width: 524px){

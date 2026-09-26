@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact me</title>
+    <link rel = "stylesheet" href="style4.css">
+</head>
+<body>
+
+ <nav class = "nav">
+     <ul>
+     <li><a href = "index.html">Home</a></li>
+     <li><a href = "projects.html">Projects</a></li>
+     <li><a href = "blog.html">Blog</a></li>
+     <li><a class = "active" href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<main>
+    <form id = "contactform" novalidate>
+        <label for = "naam">Name:</label>
+        <input id = "naam" name = "naam" required minlength="2" aria-describedby="naam-error" aria-invalid="false">
+        <span id = naam-error role ="alert"></span>
+
+        <label for = "email">Email:</label>
+        <input type = "email" id = "email" required aria-describedby="email-error" aria-invalid="false">
+        <span id = "email-error" role = "alert"></span>
+
+        <label for = "telefoon">Phone:</label>
+        <input type = "tel" id = "telefoon" aria-describedby="telefoon-error" aria-invalid="false">
+        <span id = "telefoon-error" role = "alert"></span>
+
+        <button id = "submitButton">Submit</button>
+        <div id ="form-status" aria-live="polite"></div>
+    </form>
+</main>
+
+<script src = "contact.js"></script>
+</body>
+</html>
